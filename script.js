@@ -6,7 +6,7 @@ var count = 0;
   var password_length = window.prompt("How many characters would you like your password to be? Please choose between 8 and 128 characters.");
   password_length = parseInt (password_length);
   var a = Number.isInteger(password_length);
-
+  console.log("test");
   if ((a)&&(password_length>=8 && password_length<=128)) {
     
   } else {
