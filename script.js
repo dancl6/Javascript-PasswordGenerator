@@ -63,17 +63,17 @@ var generatePassword = function() {
 
 if (lower_case){
  for (var i = 0; i < divisions; i++){
- var random_char = Math.floor(Math.random()*letters_lowercase.length)+1;
- window.alert("random char is :" + random_char);
+ var random_char = Math.floor(Math.random()*letters_lowercase.length);
+//  window.alert("random char is :" + random_char);
  var char = letters_lowercase.charAt(random_char);
- window.alert("char is :" + char);
+//  window.alert("char is :" + char);
   password = password.concat(char); 
 }
 }
 
 if (upper_case){
 for (var i = 0; i < divisions; i++){
-  var random_char =Math.floor(Math.random()*letters_capital.length)+1;
+  var random_char =Math.floor(Math.random()*letters_capital.length);
   var char = letters_capital.charAt(random_char);
   // var char = char.toUpperCase();
   password = password.concat(char);
@@ -82,14 +82,15 @@ for (var i = 0; i < divisions; i++){
 
 if (numeric) {
 for (var i = 0; i < divisions; i++){
-  var random_char =Math.floor(Math.random()*9)+1;
+  var random_char =Math.floor(Math.random()*10);
   var char = random_char;
+  // window.alert("HELLO!!!");
   password = password.concat(char);
 }
 }
 if (special_character) {
   for (var i = 0; i < divisions; i++){
-    var random_char =Math.floor(Math.random()*special_chars.length)+1;
+    var random_char =Math.floor(Math.random()*special_chars.length);
     var char = special_chars.charAt(random_char);
     password = password.concat(char);
   } 
@@ -106,8 +107,8 @@ if (special_character) {
     password = password.concat(char);
     // window.alert("string all options is " + string_all_options);
   } 
-}
-
+} var floor = Math.floor(0.5);
+  window.alert("floored " + floor);
   window.alert("password is " + password);
   return password ;
 }
