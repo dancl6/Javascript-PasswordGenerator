@@ -25,7 +25,7 @@ var generatePassword = function() {
   var numbers = "0123456789";
   var string_all_options = "";
 
-  window.alert("password length = " + password_length);
+  // window.alert("password length = " + password_length);
   var count = 0;
 
 
@@ -96,7 +96,7 @@ if (special_character) {
   } 
 }
  var extra_chars = password_length - password.length;
- window.alert("extra chars is " + extra_chars + " password is " + password);
+//  window.alert("extra chars is " + extra_chars + " password is " + password);
 
  if (extra_chars > 0) {
   for (var i = 0; i < extra_chars; i++){
@@ -108,7 +108,7 @@ if (special_character) {
     // window.alert("string all options is " + string_all_options);
   } 
 } var floor = Math.floor(0.5);
-  window.alert("floored " + floor);
+  // window.alert("floored " + floor);
   window.alert("password is " + password);
   return password ;
 }
